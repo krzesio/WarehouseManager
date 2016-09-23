@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Documents>
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\Properties\WMSData\Bookstores.lsml" Checksum="34B2DCD5EB7D290E90AED858EB98BEC78398BE06B7E9317389B45B73F07FD3B0" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\Properties\WMSData\Shelves.lsml" Checksum="9A4C3CB128417ED735ABBDD3EFDA264FAB723AD6013FCE66B70467BE3076CC15" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\Properties\WMSData\Warehouses.lsml" Checksum="658E1F706625B7782A0FD174BD841CF5DE4BF7790923C1E352503A007C9861D8" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\Properties\Client.lsml" Checksum="A91E2CE72D7EE1321B4E4557BDD7EB37EE2176195E29B3EBA83B07B55CC20CE4" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\Properties\Proxies.lsml" Checksum="642F96BB1EA521074CEF00518EE88E9332CAB1B5596EDB9986F51112180232BD" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\Screens\AddEditBook.lsml" Checksum="F5F5F9A5B60EFF7BF36EE67C0F1B7215CD314FF17D57C4335AA8A78208CD68D0" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\Screens\AddEditBooksForDocument.lsml" Checksum="C7E8A2E5BAD216316FC377B116D5AFE12FCF6BBEB95264A33B46C94D8B877772" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\Screens\AddEditBookstore.lsml" Checksum="D1F30ADE1AF0241CDF4900AA5C42C3CD6CB45EC6E873F95F16C6BA963A7FF722" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\Screens\AddEditDocument.lsml" Checksum="F5A225299CF9A7D24A0375C52D368EBE889D3BF1AD7B03FEA76CB7D9DE11BE9E" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\Screens\AddEditOwner.lsml" Checksum="F5DB98EA9969A7829D370C9B723C9DD78F7EB81EA50FFE0CD85973CC1CD93FE0" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\Screens\AddEditShelf.lsml" Checksum="943ED2E021D04B4055D485C34CB0EFA7ADBDB2D2D89FFBD8F76716DDD8AC8AA7" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\Screens\AddEditWarehouse.lsml" Checksum="1E7DB3A0110A10BC0784A70A8ED2D4A2FD45C514B61732521C92ADBAFF22DDA7" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\Screens\BrowseBooks.lsml" Checksum="16CFB78759AD4027FE43FFC09D372938DE89388A71FF9971E026EDC0EF0124A1" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\Screens\BrowseBookstores.lsml" Checksum="36852696137E93301DA1F665410F46E9151800A8AF195C5568F1AF969907370F" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\Screens\BrowseDocuments.lsml" Checksum="A690733AF325BF339FC41647FB9828168252E2348043456539488D5F968A7ACA" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\Screens\BrowseOwners.lsml" Checksum="C9D8E2D55085954368B8628FBA40113E7064DDDEFB6A8CA0453F91A3D17A871F" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\Screens\BrowseShelves.lsml" Checksum="BFE2EB62F6703524C112973FC9E5B2C0F471F370B75F87E71BCD543BC92CBC93" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\Screens\BrowseWarehouses.lsml" Checksum="CBD55393813F15D5D769909466D7D0F322CB9D01F499308B260BC706B960CBBD" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\Screens\ViewBookstore.lsml" Checksum="584A6726C370EAA4C9103F3B8E02BA5169ED209EB511FB2B544D0952739CF70F" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\Screens\ViewShelf.lsml" Checksum="B20DA0F5B3D37C2C1202E4A73A45FAE442FB25B6231D5CC833FE5D03BBA77953" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\Screens\ViewWarehouse.lsml" Checksum="2AA9EFCDD87E33BE35D08488AE99C32417820138062D2E59F89D31D26A0EFA74" />
+  </Documents>
+</ModelDocumentManifest>

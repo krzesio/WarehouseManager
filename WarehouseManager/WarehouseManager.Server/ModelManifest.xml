@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Documents>
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.Server\DataSources\ApplicationData\Table1Items.lsml" Checksum="7B2C30770478E71DBD723B318497F4F0E5F296852259E598FC9567F847CB16D2" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.Server\DataSources\WMSData\Books.lsml" Checksum="70E303A2EDC48E869ADE0183665AA579BC783AC7C4BDD35631B5DE2F9853F461" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.Server\DataSources\WMSData\BooksForDocuments.lsml" Checksum="5025A98FAA01E392D881C7F7820D7F4DD09A851B4BD972C945ACC23F23D88E56" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.Server\DataSources\WMSData\Bookstores.lsml" Checksum="78DD158A8671E56866245439AF38F08A671897A8DC72C4F4FBEB5203074215F1" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.Server\DataSources\WMSData\Documents.lsml" Checksum="94E93B4C5C45B0A5AE1AE823E053FE2701FBF7F6CFA7C20CC0D5C22C6FD15814" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.Server\DataSources\WMSData\Owners.lsml" Checksum="0CCD12B622894029A1C94068317978069CA0BF1D85B69A88E2061032C0D380DE" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.Server\DataSources\WMSData\Shelves.lsml" Checksum="F365AF4E00C91BFC3811478D07D67C7B7C927409E76FD9AA02114628FE62F101" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.Server\DataSources\WMSData\Warehouses.lsml" Checksum="4F19BAE21384494788B99ABEACB8927A0CA4216223E4A1B9809800FDF5B3FC99" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.Server\Properties\DataSources\ApplicationData.lsml" Checksum="C9007E90610BDB16B02BFA701E17F70EAA51ACD70D7BB658DBA4901EFBFA0129" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.Server\Properties\DataSources\WMSData.lsml" Checksum="676224AB3C35E3C85643C225CBCF1B34DE1CFEE5F0BF946733D86C7A5ABB0565" />
+    <Document FullPath="D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.Server\Properties\Service.lsml" Checksum="D48D610A37A66649C9C68CC8EC6A34A474911BBE7A7DF328895A4E273567D88F" />
+  </Documents>
+</ModelDocumentManifest>

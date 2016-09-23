@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" Namespace="LightSwitchApplication" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Quantity" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Title" Type="Edm.String" Nullable="false" MaxLength="50" Unicode="false" ConcurrencyMode="Fixed" />
+    <Property Name="Author" Type="Edm.String" Nullable="false" MaxLength="50" Unicode="false" ConcurrencyMode="Fixed" />
+    <Property Name="PublicationDate" Type="Edm.DateTime" Precision="0" ConcurrencyMode="Fixed" />
+    <Property Name="ShelfId" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="isDeleted" Type="Edm.Boolean" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Shelf" Relationship="LightSwitchApplication.FK__Book__ShelfId__09DE7BCC" ToRole="Shelf" FromRole="Book" />
+    <NavigationProperty Name="BooksForDocuments" Relationship="LightSwitchApplication.FK__BooksForD__BookI__1DE57479" ToRole="BooksForDocument" FromRole="Book" />
+  </EntityType>
+  <EntityType Name="BooksForDocument">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Quantity" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="BookId" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="DocumentId" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Book" Relationship="LightSwitchApplication.FK__BooksForD__BookI__1DE57479" ToRole="Book" FromRole="BooksForDocument" />
+    <NavigationProperty Name="Document" Relationship="LightSwitchApplication.FK__BooksForD__Docum__1CF15040" ToRole="Document" FromRole="BooksForDocument" />
+  </EntityType>
+  <EntityType Name="Bookstore">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="20" Unicode="false" ConcurrencyMode="Fixed" />
+    <Property Name="Address" Type="Edm.String" Nullable="false" MaxLength="20" Unicode="false" ConcurrencyMode="Fixed" />
+    <Property Name="OwnerId" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Owner" Relationship="LightSwitchApplication.FK__Bookstore__Owner__1273C1CD" ToRole="Owner" FromRole="Bookstore" />
+    <NavigationProperty Name="Documents" Relationship="LightSwitchApplication.FK__Document__Bookst__182C9B23" ToRole="Document" FromRole="Bookstore" />
+  </EntityType>
+  <EntityType Name="Document">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DocumentNumber" Type="Edm.String" Nullable="false" MaxLength="20" Unicode="false" ConcurrencyMode="Fixed" />
+    <Property Name="DocumentDate" Type="Edm.DateTime" Precision="0" ConcurrencyMode="Fixed" />
+    <Property Name="BookstoreId" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="BooksForDocuments" Relationship="LightSwitchApplication.FK__BooksForD__Docum__1CF15040" ToRole="BooksForDocument" FromRole="Document" />
+    <NavigationProperty Name="Bookstore" Relationship="LightSwitchApplication.FK__Document__Bookst__182C9B23" ToRole="Bookstore" FromRole="Document" />
+  </EntityType>
+  <EntityType Name="Owner">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="20" Unicode="false" ConcurrencyMode="Fixed" />
+    <Property Name="LastName" Type="Edm.String" Nullable="false" MaxLength="20" Unicode="false" ConcurrencyMode="Fixed" />
+    <Property Name="PhoneNumber" Type="Edm.String" MaxLength="30" Unicode="false" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Bookstores" Relationship="LightSwitchApplication.FK__Bookstore__Owner__1273C1CD" ToRole="Bookstore" FromRole="Owner" />
+  </EntityType>
+  <EntityType Name="Shelf">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Symbol" Type="Edm.String" Nullable="false" MaxLength="20" Unicode="false" ConcurrencyMode="Fixed" />
+    <Property Name="WarehouseId" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Books" Relationship="LightSwitchApplication.FK__Book__ShelfId__09DE7BCC" ToRole="Book" FromRole="Shelf" />
+    <NavigationProperty Name="Warehouse" Relationship="LightSwitchApplication.FK__Shelf__Warehouse__0519C6AF" ToRole="Warehouse" FromRole="Shelf" />
+  </EntityType>
+  <EntityType Name="Warehouse">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Symbol" Type="Edm.String" Nullable="false" MaxLength="20" Unicode="false" ConcurrencyMode="Fixed" />
+    <Property Name="AdditionalInfo" Type="Edm.String" Nullable="false" MaxLength="100" Unicode="false" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Shelves" Relationship="LightSwitchApplication.FK__Shelf__Warehouse__0519C6AF" ToRole="Shelf" FromRole="Warehouse" />
+  </EntityType>
+  <Association Name="FK__BooksForD__BookI__1DE57479">
+    <End Role="Book" Type="LightSwitchApplication.Book" Multiplicity="1" />
+    <End Role="BooksForDocument" Type="LightSwitchApplication.BooksForDocument" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BooksForDocument">
+        <PropertyRef Name="BookId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Document__Bookst__182C9B23">
+    <End Role="Bookstore" Type="LightSwitchApplication.Bookstore" Multiplicity="1" />
+    <End Role="Document" Type="LightSwitchApplication.Document" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bookstore">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Document">
+        <PropertyRef Name="BookstoreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BooksForD__Docum__1CF15040">
+    <End Role="Document" Type="LightSwitchApplication.Document" Multiplicity="1" />
+    <End Role="BooksForDocument" Type="LightSwitchApplication.BooksForDocument" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Document">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BooksForDocument">
+        <PropertyRef Name="DocumentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Bookstore__Owner__1273C1CD">
+    <End Role="Owner" Type="LightSwitchApplication.Owner" Multiplicity="1" />
+    <End Role="Bookstore" Type="LightSwitchApplication.Bookstore" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Owner">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Bookstore">
+        <PropertyRef Name="OwnerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Book__ShelfId__09DE7BCC">
+    <End Role="Shelf" Type="LightSwitchApplication.Shelf" Multiplicity="1" />
+    <End Role="Book" Type="LightSwitchApplication.Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Shelf">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Book">
+        <PropertyRef Name="ShelfId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Shelf__Warehouse__0519C6AF">
+    <End Role="Warehouse" Type="LightSwitchApplication.Warehouse" Multiplicity="1" />
+    <End Role="Shelf" Type="LightSwitchApplication.Shelf" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Warehouse">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Shelf">
+        <PropertyRef Name="WarehouseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="WMSData" m:IsDefaultEntityContainer="true">
+    <EntitySet Name="Books" EntityType="LightSwitchApplication.Book" />
+    <EntitySet Name="BooksForDocuments" EntityType="LightSwitchApplication.BooksForDocument" />
+    <EntitySet Name="Bookstores" EntityType="LightSwitchApplication.Bookstore" />
+    <EntitySet Name="Documents" EntityType="LightSwitchApplication.Document" />
+    <EntitySet Name="Owners" EntityType="LightSwitchApplication.Owner" />
+    <EntitySet Name="Shelves" EntityType="LightSwitchApplication.Shelf" />
+    <EntitySet Name="Warehouses" EntityType="LightSwitchApplication.Warehouse" />
+    <AssociationSet Name="FK__BooksForD__BookI__1DE57479" Association="LightSwitchApplication.FK__BooksForD__BookI__1DE57479">
+      <End Role="Book" EntitySet="Books" />
+      <End Role="BooksForDocument" EntitySet="BooksForDocuments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Document__Bookst__182C9B23" Association="LightSwitchApplication.FK__Document__Bookst__182C9B23">
+      <End Role="Bookstore" EntitySet="Bookstores" />
+      <End Role="Document" EntitySet="Documents" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BooksForD__Docum__1CF15040" Association="LightSwitchApplication.FK__BooksForD__Docum__1CF15040">
+      <End Role="Document" EntitySet="Documents" />
+      <End Role="BooksForDocument" EntitySet="BooksForDocuments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Bookstore__Owner__1273C1CD" Association="LightSwitchApplication.FK__Bookstore__Owner__1273C1CD">
+      <End Role="Owner" EntitySet="Owners" />
+      <End Role="Bookstore" EntitySet="Bookstores" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Book__ShelfId__09DE7BCC" Association="LightSwitchApplication.FK__Book__ShelfId__09DE7BCC">
+      <End Role="Shelf" EntitySet="Shelves" />
+      <End Role="Book" EntitySet="Books" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Shelf__Warehouse__0519C6AF" Association="LightSwitchApplication.FK__Shelf__Warehouse__0519C6AF">
+      <End Role="Warehouse" EntitySet="Warehouses" />
+      <End Role="Shelf" EntitySet="Shelves" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

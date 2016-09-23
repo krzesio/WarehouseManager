@@ -1,0 +1,4 @@
+D:\Box Sync\Inżynierka\Projekt\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\bin\Debug\LSResourceGeneratorsTask.mcs
+D:\Box Sync\Inżynierka\Projekt\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs
+D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\bin\Debug\LSResourceGeneratorsTask.mcs
+D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\WarehouseManager.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs

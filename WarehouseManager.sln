@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseManager.Server", "
 EndProject
 Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "WarehouseManager.HTMLClient", "WarehouseManager\WarehouseManager.HTMLClient\WarehouseManager.HTMLClient.jsproj", "{B70A9C92-6C40-4DCC-ACEC-5467B4377263}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseManager.DesktopClient", "WarehouseManager\WarehouseManager.DesktopClient\WarehouseManager.DesktopClient.csproj", "{AE28301F-337D-4628-8A7B-58400523CED8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B70A9C92-6C40-4DCC-ACEC-5467B4377263}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B70A9C92-6C40-4DCC-ACEC-5467B4377263}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B70A9C92-6C40-4DCC-ACEC-5467B4377263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE28301F-337D-4628-8A7B-58400523CED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE28301F-337D-4628-8A7B-58400523CED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE28301F-337D-4628-8A7B-58400523CED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE28301F-337D-4628-8A7B-58400523CED8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -180,3 +180,6 @@ D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\bin\Debug\HTMLClient\S
 D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\bin\Debug\HTMLClient\Scripts\Generated\resources.js
 D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\bin\Debug\HTMLClient\Content\Resources\Generated\model.json
 D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\bin\Debug\HTMLClient\Content\Resources\msls.lang-en-us.resjson
+D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\bin\Debug\DesktopClient\default.htm
+D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\bin\Debug\DesktopClient\Silverlight.js
+D:\Box Sync\Inżynierka\WarehouseManager\WarehouseManager\bin\Debug\DesktopClient\web\WarehouseManager.DesktopClient.xap

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application
+  Name="LightSwitchApplication.WarehouseManager.DesktopClient" xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <Application.Attributes>
+    <Partial />
+  </Application.Attributes>
+  <EntityType>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:Table1Item" />
+    </EntityType.Attributes>
+  </EntityType>
+  <EntityType>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:Book" />
+    </EntityType.Attributes>
+  </EntityType>
+  <EntityType>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:BooksForDocument" />
+    </EntityType.Attributes>
+  </EntityType>
+  <EntityType>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:Bookstore" />
+    </EntityType.Attributes>
+  </EntityType>
+  <EntityType>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:Document" />
+    </EntityType.Attributes>
+  </EntityType>
+  <EntityType>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:Owner" />
+    </EntityType.Attributes>
+  </EntityType>
+  <EntityType>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:Shelf" />
+    </EntityType.Attributes>
+  </EntityType>
+  <EntityType>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:Warehouse" />
+    </EntityType.Attributes>
+  </EntityType>
+  <EntityContainer
+    Name="ApplicationData">
+    <EntityContainer.Attributes>
+      <Proxy
+        Target="ServiceInterface:ApplicationData" />
+    </EntityContainer.Attributes>
+  </EntityContainer>
+  <EntityContainer
+    Name="WMSData">
+    <EntityContainer.Attributes>
+      <Proxy
+        Target="ServiceInterface:WMSData" />
+    </EntityContainer.Attributes>
+  </EntityContainer>
+  <Association
+    Name="FK__BooksForD__BookI__1DE57479">
+    <Association.Attributes>
+      <Proxy
+        Target="ServiceInterface:FK__BooksForD__BookI__1DE57479" />
+    </Association.Attributes>
+  </Association>
+  <Association
+    Name="FK__Document__Bookst__182C9B23">
+    <Association.Attributes>
+      <Proxy
+        Target="ServiceInterface:FK__Document__Bookst__182C9B23" />
+    </Association.Attributes>
+  </Association>
+  <Association
+    Name="FK__BooksForD__Docum__1CF15040">
+    <Association.Attributes>
+      <Proxy
+        Target="ServiceInterface:FK__BooksForD__Docum__1CF15040" />
+    </Association.Attributes>
+  </Association>
+  <Association
+    Name="FK__Bookstore__Owner__1273C1CD">
+    <Association.Attributes>
+      <Proxy
+        Target="ServiceInterface:FK__Bookstore__Owner__1273C1CD" />
+    </Association.Attributes>
+  </Association>
+  <Association
+    Name="FK__Book__ShelfId__09DE7BCC">
+    <Association.Attributes>
+      <Proxy
+        Target="ServiceInterface:FK__Book__ShelfId__09DE7BCC" />
+    </Association.Attributes>
+  </Association>
+  <Association
+    Name="FK__Shelf__Warehouse__0519C6AF">
+    <Association.Attributes>
+      <Proxy
+        Target="ServiceInterface:FK__Shelf__Warehouse__0519C6AF" />
+    </Association.Attributes>
+  </Association>
+</Application>

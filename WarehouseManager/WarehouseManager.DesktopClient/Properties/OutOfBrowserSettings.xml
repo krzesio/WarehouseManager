@@ -1,7 +1,7 @@
-﻿<OutOfBrowserSettings ShortName="Administrative Tools" EnableGPUAcceleration="False" ShowInstallMenuItem="False">
-  <OutOfBrowserSettings.Blurb>Administrative Tools</OutOfBrowserSettings.Blurb>
+﻿<OutOfBrowserSettings ShortName="Administration Panel" EnableGPUAcceleration="False" ShowInstallMenuItem="False">
+  <OutOfBrowserSettings.Blurb>Administration Panel</OutOfBrowserSettings.Blurb>
   <OutOfBrowserSettings.WindowSettings>
-    <WindowSettings Title="Administrative Tools" Top="0" Left="0" WindowStartupLocation="Manual" />
+    <WindowSettings Title="Administration Panel" Top="0" Left="0" WindowStartupLocation="Manual" />
   </OutOfBrowserSettings.WindowSettings>
   <OutOfBrowserSettings.SecuritySettings>
     <SecuritySettings ElevatedPermissions="Required" />

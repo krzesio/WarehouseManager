@@ -41,6 +41,17 @@
     <Permission.Attributes>
       <DisplayName
         Value="Worker" />
+      <Description
+        Value="Provides the ability to fully manage Warehouses." />
+    </Permission.Attributes>
+  </Permission>
+  <Permission
+    Name="Manager">
+    <Permission.Attributes>
+      <DisplayName
+        Value="Manager" />
+      <Description
+        Value="Provides the ability to fully manage Warehouses and Bookstores." />
     </Permission.Attributes>
   </Permission>
 </ServiceApplication>

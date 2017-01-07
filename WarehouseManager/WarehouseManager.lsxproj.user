@@ -5,8 +5,8 @@
     <ProjectView>ShowAllFiles</ProjectView>
     <StartUpClientProject>WarehouseManager.DesktopClient</StartUpClientProject>
     <SchemaManagementDatabaseIncludesSecurityObjects>True</SchemaManagementDatabaseIncludesSecurityObjects>
-    <GrantedPermissions>Microsoft.LightSwitch.Security:SecurityAdministration,LightSwitchApplication:Worker</GrantedPermissions>
-    <SchemaManagementLastSsdlWriteTime>636110365621073539</SchemaManagementLastSsdlWriteTime>
+    <GrantedPermissions>Microsoft.LightSwitch.Security:SecurityAdministration,LightSwitchApplication:Worker,LightSwitchApplication:Manager</GrantedPermissions>
+    <SchemaManagementLastSsdlWriteTime>636193206096912997</SchemaManagementLastSsdlWriteTime>
     <SchemaManagementSchemaBuildState>0</SchemaManagementSchemaBuildState>
     <EncryptedPublishConnectionString />
     <EncryptedPublishSchemaConnectionString />

@@ -21,9 +21,13 @@ namespace LightSwitchApplication
         /// </summary>
         public const string SecurityAdministration = global::Microsoft.LightSwitch.Security.ApplicationPermissions.SecurityAdministration;
         /// <summary>
-        /// Worker
+        /// Provides the ability to fully manage Warehouses.
         /// </summary>
         public const string Worker = "LightSwitchApplication:Worker";
+        /// <summary>
+        /// Provides the ability to fully manage Warehouses and Bookstores.
+        /// </summary>
+        public const string Manager = "LightSwitchApplication:Manager";
 
         /// <summary>
         /// Gets all permissions defined for the application.  This includes system and user-defined permissions.

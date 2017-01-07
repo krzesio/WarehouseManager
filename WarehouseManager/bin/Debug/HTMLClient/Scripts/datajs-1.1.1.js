@@ -6227,7 +6227,7 @@
         /// <summary>Determines whether a data item in a JSON light object is a navigation property.</summary>
         /// <param name="name" type="String">Name of the data item to test.</param>
         /// <param name="data" type="Object">JSON light object that owns the data item.</param>
-        /// <param name="dataItemModel" type="Object">Object describing the data item in an OData conceptual schema.</param>
+        /// <param name="dataItemModel" type="Object">Object describing the data item test userin an OData conceptual schema.</param>
         /// <returns type="Boolean">True if the data item is a navigation property; false otherwise.</returns>
 
         if (!!data[name + "@" + navUrlAnnotation] || (dataItemModel && dataItemModel.relationship)) {

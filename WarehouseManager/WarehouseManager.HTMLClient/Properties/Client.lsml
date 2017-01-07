@@ -11,7 +11,7 @@
     <Partial
       IsPrimary="True" />
     <HomeScreen
-      Value="BrowseDocuments" />
+      Value="BrowseBooks" />
   </Application.Attributes>
   <EntityContainerGroup
     Name="DataWorkspace">
@@ -43,6 +43,12 @@
     <Permission.Attributes>
       <Proxy
         Target="ServiceInterface:Worker" />
+    </Permission.Attributes>
+  </Permission>
+  <Permission>
+    <Permission.Attributes>
+      <Proxy
+        Target="ServiceInterface:Manager" />
     </Permission.Attributes>
   </Permission>
   <Application.NavigationItems>

@@ -2079,7 +2079,8 @@
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:EmailAddress",
           "name": "EmailAddress",
-          "underlyingType": { "__id": ":String" }
+          "underlyingType": { "__id": ":String" },
+          "Microsoft.LightSwitch.Extensions:@EmailAddressValidation": { "domainRequired": true }
         },
         {
           "__isSemanticType": 1,
@@ -2097,13 +2098,15 @@
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:PhoneNumber",
           "name": "PhoneNumber",
-          "underlyingType": { "__id": ":String" }
+          "underlyingType": { "__id": ":String" },
+          "Microsoft.LightSwitch.Extensions:@PhoneNumberValidation": { "formats": "C (AAA) NNN-NNNN;C (AAA) NNNNNNN;CAAANNNNNNN;(AAA) NNN-NNNN;(AAA) NNNNNNN;AAANNNNNNN;NNN-NNNN;NNNNNNN" }
         },
         {
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:Percent",
           "name": "Percent",
           "underlyingType": { "__id": ":Decimal" },
+          "Microsoft.LightSwitch.Extensions:@FormatParameter": { "decimalDigits": 2 },
           ":@DecimalConstraint":
           {
             "scale": 9
@@ -2113,7 +2116,8 @@
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:WebAddress",
           "name": "WebAddress",
-          "underlyingType": { "__id": ":String" }
+          "underlyingType": { "__id": ":String" },
+          "Microsoft.LightSwitch.Extensions:@WebAddressValidation": { }
         }
       ]
     },
@@ -2133,7 +2137,7 @@
       ]
     },
     {
-      "homeScreen": { "__id": "BrowseDocuments" },
+      "homeScreen": { "__id": "BrowseBooks" },
       "id": "!module",
       "name": "LightSwitchApplication.WarehouseManager.HTMLClient",
       "logo": "/Content/Images/logo.png",
@@ -2143,7 +2147,7 @@
       "theme": { "__id": ":HTMLTheme" },
       ":@ModuleNamespace": { "namespace": "LightSwitchApplication" },
       ":@Partial": { "isPrimary": true },
-      ":@HomeScreen": { "value": { "__id": "BrowseDocuments" } },
+      ":@HomeScreen": { "value": { "__id": "BrowseBooks" } },
       "globalItems":
       [
         {
@@ -2170,6 +2174,10 @@
         {
           "id": "Worker",
           "name": "Worker"
+        },
+        {
+          "id": "Manager",
+          "name": "Manager"
         },
         {
           "id": "Table1Item*",

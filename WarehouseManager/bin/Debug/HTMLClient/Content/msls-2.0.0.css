@@ -108,7 +108,8 @@ a.msls-hauto, a.msls-hstretch {
     height: 36px;
     background: transparent;
     border-radius: 0;
-    background-image: url(Images/msls-loader-dark.gif);
+    background-image: url(Images/msls-loader-
+    .gif);
     background-size: contain !important;
     background-repeat: no-repeat;
 }

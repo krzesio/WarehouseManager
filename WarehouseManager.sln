@@ -11,6 +11,8 @@ Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "WarehouseManager.HTMLClient
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseManager.DesktopClient", "WarehouseManager\WarehouseManager.DesktopClient\WarehouseManager.DesktopClient.csproj", "{AE28301F-337D-4628-8A7B-58400523CED8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodedUITestProject4", "CodedUITestProject4\CodedUITestProject4.csproj", "{E3382474-F57C-466D-B562-CE5CB8ECF35D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{AE28301F-337D-4628-8A7B-58400523CED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE28301F-337D-4628-8A7B-58400523CED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE28301F-337D-4628-8A7B-58400523CED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3382474-F57C-466D-B562-CE5CB8ECF35D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3382474-F57C-466D-B562-CE5CB8ECF35D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3382474-F57C-466D-B562-CE5CB8ECF35D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3382474-F57C-466D-B562-CE5CB8ECF35D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

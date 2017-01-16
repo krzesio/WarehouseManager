@@ -22,7 +22,7 @@
     <ApplicationServerType>IIS</ApplicationServerType>
     <AuthenticationType>Forms</AuthenticationType>
     <ApplicationName>Administration Panel</ApplicationName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
     <ServiceDefinitionFile>ServiceDefinition.csdef</ServiceDefinitionFile>
     <ServiceConfigurationFile>ServiceConfiguration.cscfg</ServiceConfigurationFile>
     <SqlExpressInstanceName>(LocalDB)\v11.0</SqlExpressInstanceName>
@@ -37,7 +37,7 @@
     <PublishNewDatabase>True</PublishNewDatabase>
     <PublishUrl>http:/localhost</PublishUrl>
     <PublishSite>Default Web Site/WarehouseManager</PublishSite>
-    <RemotePublish>True</RemotePublish>
+    <RemotePublish>False</RemotePublish>
     <SkipExtraFilesOnServer>True</SkipExtraFilesOnServer>
     <UseLightSwitchWebDeploymentProvider>False</UseLightSwitchWebDeploymentProvider>
     <AzureAllowUpgrade>True</AzureAllowUpgrade>
@@ -55,6 +55,7 @@
     <SharePointServerToServerCertificateIssuerId />
     <RequireSecureConnection>True</RequireSecureConnection>
     <DefaultLanguage>en-US</DefaultLanguage>
+    <PublishLocation>C:\Users\Krzesimir\Desktop</PublishLocation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <OutputPath>bin\Debug</OutputPath>
